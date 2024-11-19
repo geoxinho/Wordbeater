@@ -1,9 +1,9 @@
 window.addEventListener("load", init);
 
 const level = {
-  easy: 6,
-  medium: 4,
-  hard: 3,
+  easy: 5,
+  medium: 3,
+  hard: 2,
 };
 
 function handleChange(selectLevel) {
