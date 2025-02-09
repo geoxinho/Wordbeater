@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speeding </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-lg-12 bg-dark text-white d-flex">
+      <h1 class="mx-auto">WordBeater</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="container text-center mt-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <p>Type The Given Words Within <span id="seconds" class="text-success">5</span> Seconds</p>
+      <label for="" class="mx-2">Select Level:</label>
+      <select name="level" id="select-level" onchange="handleChange(this)">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <h2 class="display-1 mb-5 text-success " id="current-word">hello</h2>
+      <input type="text" class="form-control form-control-lg" placeholder="start typing..." id="word-input" autofocus>
+      <h4 class="mt-3" id="message"></h4>
+      <h4 class="mt-3" id="restart"></h4>
+
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <h3>Time Left: <span id="time">0</span></h3>
+        </div>
+        <div class="col-md-6">
+          <h3>Score: <span id="score">0</span></h3>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <h3 class="new-high-score"></h3>
+        <h2> High Score: <span class="high-score"> </span></h2>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md bg-dark text-white">
+          <div class="p-3 ">
+            <h4>Instruction</h4>
+            <p>Type each word given in amount of seconds allocated. To play again type the current word and your scores
+              will be reset</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+</html>
